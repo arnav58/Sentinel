@@ -1,8 +1,9 @@
 body{
     background: #eef2f5;
+    font-family: 'Roboto', sans-serif;
 }
 
-.intro {
+.intro-content {
     position: relative;
     background-color: #3387a7;
     width: 1080px;
@@ -40,4 +41,103 @@ body{
 
 #instagram {
     background-color: #e62525;
+}
+
+#banner {
+    position: relative;
+    top: -139px;
+    width: 1180px;
+    height: 300px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 -2px 18px 0 rgba(72,89,102,.25);
+}
+
+.section-header {
+    font-size: 24px;
+    color: #333;
+    width: 100%;
+    text-align: center;
+}
+
+.section-content {
+    margin-top: 32px;
+    font-size: 16px;
+    color: #555;
+    width: 100%;
+    text-align: center;
+}
+
+.app-tiles {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 800px;
+}
+
+.app-tile {
+    position: relative;
+    float: left;
+    height: 200px;
+    background-color: #ffffff;
+    width: 140px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px 0 rgba(189,208,223,.26);
+    transition: box-shadow .3s ease,transform .3s ease;
+    padding: 20px;
+}
+
+.app-tile:hover {
+    transform: translate3d(0,-2px,0);
+    box-shadow: 0 8px 22px 0 rgba(189,208,223,.6);
+}
+
+.add-more-apps {
+    position: relative;
+    float: left;
+    height: 200px;
+    background-color: #eef2f5;
+    width: 140px;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.plus {
+    width: 100%;
+    transform: scale(1);
+    transition: transform .4s cubic-bezier(.175,.885,.135,1.425);
+}
+
+.plus:hover {
+    transform: scale(1.12);
+}
+
+.plus-apps {
+    position: relative;
+    width: 72px;
+    height: 72px;
+    line-height: 100px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-image: url("../images/plus.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    -ms-transform: scale(.6);
+    transform: scale(.6);
+    transition: transform .4s cubic-bezier(.175,.885,.135,1.425),opacity .2s ease;
+    transition-delay: 1.2s;
+}
+
+.add-desc {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5a6f7e;
+    opacity: .8;
 }
